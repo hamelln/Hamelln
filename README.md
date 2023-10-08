@@ -7,7 +7,10 @@
 ## Contact
 <div style="display:flex; flex-direction:row;">
     <a href="mailto:hylee.dev@gmail.com">
-        <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"> 
+        <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=f2f2f2"> 
+    </a>
+    <a href="https://www.linkedin.com/in/%ED%83%9C%ED%98%84-%EC%9D%B4-531077273/">
+        <img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=f2f2f2"> 
     </a>
 </div>
 
