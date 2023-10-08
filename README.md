@@ -4,14 +4,9 @@
 
 ## 💻 DEV's log 💻
 <div style="display:flex; flex-direction:row;">
-    <a href="https://blog.cinntiq.synology.me">
-        <img src="https://img.shields.io/badge/
-        Velog-20c997?style=for-the-badge&logo=Vimeo&logoColor=white"> 
-    </a>
-  
-![hamelln's GitHub stats](https://github-readme-stats.vercel.app/api?username=hamelln&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hamelln&layout=compact&theme=tokyonight)
-</div><br>
+<img src="https://github-readme-stats.vercel.app/api?username=hamelln&show_icons=true&theme=tokyonight" height="200px">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamelln&layout=compact&theme=tokyonight" height="200px">
+</div>
 
 <img src="https://img.shields.io/badge/HTML5-373737?style=flat&logo=html5&logoColor=E34F26"/>
 <img src="https://img.shields.io/badge/CSS3-373737?style=flat&logo=css3&logoColor=1572B6"/>
