@@ -1,3 +1,11 @@
+안녕하세요! 저는 프론트엔드 개발자 이태현입니다.
+
+JavaScript 동작에 관심이 많고 TypeScript를 사용합니다.  
+팀 프로젝트 경험이 2번 있고 현재 타입스크립트 스터디에 참여하면서 BeerMap 서비스를 개발중입니다.  
+
+블로그에서는 JS 학습을 위주로 정리하고 있습니다.  
+더 자세한 정보나 연락은 아래의 Contact 정보를 참조해주시기 바랍니다. 감사합니다!
+
 ## Blog
 
 <a href="https://blog.cinntiq.synology.me"><img src="https://img.shields.io/badge/ghost-15171A?style=for-the-badge&logo=ghost&logoColor=f2f2f2"></a>
@@ -22,8 +30,8 @@
 </div>
 
 ## Skills
-<p><strong>Frontend</strong></p>
 <div align="left">
+<p><strong>Frontend</strong></p>
 <img src="https://img.shields.io/badge/React-373737?style=flat&logo=react&logoColor=61DAFB"/>
 <img src="https://img.shields.io/badge/Next.js-373737?style=flat&logo=next.js&logoColor=000000"/>
 <img src="https://img.shields.io/badge/TypeScript-373737?style=flat&logo=typescript&logoColor=3178C6"/>
