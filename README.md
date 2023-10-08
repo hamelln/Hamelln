@@ -1,6 +1,6 @@
 안녕하세요! 저는 프론트엔드 개발자 이태현입니다.  
 JavaScript 동작에 관심이 많고 TypeScript를 사용합니다.  
-팀 프로젝트 경험이 2번 있고 현재 타입스크립트 스터디에 참여하면서 BeerMap 서비스를 개발중입니다.  
+팀 프로젝트 경험이 2번 있고 현재 타입스크립트 스터디에 참여하면서 [BeerMap](https://beermap.vercel.app) 서비스를 개발중입니다.  
 <br />
 
 <img src="https://github-readme-stats.vercel.app/api?username=hamelln&show_icons=true&theme=tokyonight" width="360px">
