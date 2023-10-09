@@ -31,7 +31,7 @@ JavaScript 동작에 관심이 많고 TypeScript를 사용합니다.
 <div align="left">
 <img src="https://img.shields.io/badge/Jest-C21325?style=flat&logo=jest&logoColor=f2f2f2"/>
 <img src="https://img.shields.io/badge/Storybook-FF4785?style=flat&logo=storybook&logoColor=373737"/>
-<img src="https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress&logoColor=436252"/>
+<img src="https://img.shields.io/badge/Cypress-17202C?style=flat&logo=cypress&logoColor=f2f2f2"/>
 </div>
 
 <div align="left">
