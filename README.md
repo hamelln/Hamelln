@@ -14,7 +14,7 @@ JavaScript 동작에 관심이 많고 TypeScript를 사용합니다.
     <a href="https://www.linkedin.com/in/%ED%83%9C%ED%98%84-%EC%9D%B4-531077273/">
         <img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=f2f2f2"> 
     </a>
-    <a href="https://blog.cinntiq.synology.me"><img src="https://img.shields.io/badge/ghost-15171A?style=for-the-badge&logo=ghost&logoColor=f2f2f2"></a>
+    <a href="https://blog.cinntiq.synology.me" target="_blank"><img src="https://img.shields.io/badge/ghost-15171A?style=for-the-badge&logo=ghost&logoColor=f2f2f2"></a>
 </div>
 
 <br />
