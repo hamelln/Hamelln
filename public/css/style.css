@@ -195,7 +195,7 @@ img[src=""] {
 }
 
 .about__nav {
-  width: 40%;
+  width: 50%;
   margin-top: 2em;
   padding: 10px 1em;
   background-color: rgba(0, 0, 0, 0.63);
@@ -224,6 +224,18 @@ img[src=""] {
   border: 2px solid var(--pale-gray);
   border-radius: var(--border-radius-l);
   background-color: rgba(0, 0, 0, 0.63);
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-slate-200 {
+  color: rgb(226 232 240/0.9);
+}
+
+.text-slate-200:hover {
+  color: #df9501;
 }
 
 @keyframes flash {

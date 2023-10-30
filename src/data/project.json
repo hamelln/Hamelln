@@ -1,4 +1,35 @@
 {
+  "BeerMap": {
+    "uuid": "csm4bbcc-21f3-11ee-be56-0242ac120002",
+    "title": "BeerMap",
+    "siteUrl": "https://beermap.vercel.app/",
+    "codeUrl": "https://github.com/hamelln/beermap",
+    "docsUrl": "https://separate-flea-6a7.notion.site/be3a874ee927493ea3da5f1f840b3886?pvs=4",
+    "backgroundImage": "./public/img/dark-logo.svg",
+    "describe": "맥주가 맛있는 브루어리 찾기",
+    "skillOverview": ["Next.js", "React", "Node.js"],
+    "since": "2023",
+    "spec": {
+      "startDay": "2023.07",
+      "endDay": "현재",
+      "member": "1",
+      "skill": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "Firebase"
+      ],
+      "role": "기획, 디자인, 프론트엔드, 백엔드, 배포",
+      "characterImage": "./public/img/character.png"
+    },
+    "feature": {
+      "challenge": "이 사이트는 SSR이 중점인 서비스입니다. 상세 페이지 조회 시 서버 측 렌더링이 느려서 3초 이상 걸린 적이 있어요.",
+      "approach": "기본적인 최적화를 할 필요가 있었고, 이미지 최적화와 로딩 순서를 고쳤고 로직을 간소화했습니다.",
+      "outcome": "그 결과 로딩 시간을 3초대에서 1초대로 줄였습니다."
+    }
+  },
   "Hamelln": {
     "uuid": "bea4bbcc-21f3-11ee-be56-0242ac120002",
     "title": "Hamelln",
@@ -8,12 +39,13 @@
     "backgroundImage": "./public/img/dark-logo.svg",
     "describe": "나를 소개하는 홈페이지",
     "skillOverview": ["HTML", "CSS", "JavaScript"],
+    "since": "2023",
     "spec": {
       "startDay": "2023.03",
       "endDay": "2023.07",
       "member": "1",
       "skill": ["HTML", "CSS", "JavaScript"],
-      "role": "기획, 디자인, 프론트엔드",
+      "role": "기획, 디자인, 프론트엔드, 배포",
       "characterImage": "./public/img/character.png"
     },
     "feature": {
@@ -31,6 +63,7 @@
     "backgroundImage": "./public/img/COFFEEN.webp",
     "describe": "커피 간단 소개",
     "skillOverview": ["Next.js", "React", "TypeScript"],
+    "since": "2022",
     "spec": {
       "startDay": "2022.10",
       "endDay": "2023.04",
@@ -43,7 +76,7 @@
         "Styled-Components",
         "Jest"
       ],
-      "role": "기획, 디자인, 프론트엔드",
+      "role": "기획, 디자인, 프론트엔드, 배포",
       "characterImage": "./public/img/character.png"
     },
     "feature": {
@@ -61,6 +94,7 @@
     "backgroundImage": "./public/img/modak.svg",
     "describe": "캠핑족에게 정보, 리뷰 제공",
     "skillOverview": ["Next.js", "React", "TypeScript"],
+    "since": "2022",
     "spec": {
       "startDay": "2022.01",
       "endDay": "2022.02",
@@ -92,6 +126,7 @@
     "bgmUrl": "./public/sound/bgm.mp3",
     "describe": "유기 동물 입양 커뮤니티",
     "skillOverview": ["HTML", "CSS", "JavaScript"],
+    "since": "2021",
     "spec": {
       "startDay": "2021.12.14",
       "endDay": "2021.12.25",

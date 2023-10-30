@@ -7,6 +7,7 @@ import Spec from "./Spec.js";
 import Loading from "./Loading.js";
 import createElement from "../handlers/element-creater.js";
 import renderSelection from "./index.js";
+import { saveFocusedElement } from "../handlers/focus-saver.js";
 
 const createInfoBox = (projectTitle, backgroundImage, infoItems) => {
   const projectBox = createElement("div", { class: "project-box" });
@@ -28,7 +29,8 @@ const createInfoBox = (projectTitle, backgroundImage, infoItems) => {
 };
 
 const createInfoItems = (siteUrl, codeUrl, docsUrl, spec, title, render) => {
-  const openLink = (url) => {
+  const openLink = (url, name) => {
+    saveFocusedElement(name);
     window.open(url, "_blank");
   };
 
@@ -40,9 +42,10 @@ const createInfoItems = (siteUrl, codeUrl, docsUrl, spec, title, render) => {
   };
 
   const homepageItem =
-    siteUrl && createInfoLinkItem("homepage", openLink, siteUrl);
-  const codeItem = codeUrl && createInfoLinkItem("code", openLink, codeUrl);
-  const featureItem = createInfoItem("docs", openLink, docsUrl);
+    siteUrl && createInfoLinkItem("homepage", openLink, siteUrl, "homepage");
+  const codeItem =
+    codeUrl && createInfoLinkItem("code", openLink, codeUrl, "code");
+  const featureItem = createInfoItem("docs", openLink, docsUrl, "docs");
   const specItem = createInfoItem("spec", Spec, spec, render);
   const exitItem = createInfoItem("exit", onClose, title, bgm);
   return [homepageItem, codeItem, featureItem, specItem, exitItem];
@@ -70,7 +73,7 @@ const createInfoItem = (content, callback, ...args) => {
 
   return createElement("li", {
     class: "project-box__info__item focusable",
-    dataName: content,
+    lastFocused: content,
     textContent: content,
     tabIndex: 0,
     onClick: [handleClickAndEnter, callback, ...args],

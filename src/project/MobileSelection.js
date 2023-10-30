@@ -2,7 +2,7 @@
 
 import createElement from "../handlers/element-creater.js";
 
-const PROJECT_ID_LIST = ["반려in", "Hamelln", "COFFEEN", "Modak"];
+const PROJECT_ID_LIST = ["BeerMap", "반려in", "Hamelln", "COFFEEN", "Modak"];
 const LIST_LENGTH = PROJECT_ID_LIST.length;
 const DEFAULT_INPUT_NUMBER = 2;
 let inputIndex = DEFAULT_INPUT_NUMBER - 1;
@@ -78,14 +78,17 @@ const createCarouselCards = (inputs, data) => {
 
 const createLabels = (inputs, data) =>
   inputs.map((input, index) => createLabel(input, index, data));
+
 const createLabel = (input, index, data) => {
   const projectTitle = PROJECT_ID_LIST[index];
+
   const labelElement = createElement("label", {
     class: "project-content__carousel__card focusable",
     for: input.id,
     id: projectTitle,
     tabIndex: 0,
   });
+
   const imgElement = createElement("img", {
     class: "project-content__carousel__card__image",
     src: data[projectTitle].backgroundImage,

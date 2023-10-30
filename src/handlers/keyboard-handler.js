@@ -1,6 +1,9 @@
 "use strict";
 
-const moveToNextFocus = (event, focusableArray) => {
+import { addFocus, removeFocus } from "./focus-handler.js";
+
+const moveToNextFocus = (event) => {
+  const focusableArray = Array.from(document.querySelectorAll(".focusable"));
   const currentIndex = focusableArray.findIndex(
     (element) => element === document.activeElement
   );
@@ -25,7 +28,7 @@ const moveToNextFocus = (event, focusableArray) => {
       nextIndex = currentIndex + 1;
       break;
     default:
-      return [null, null];
+      return;
   }
 
   if (nextIndex < 0) nextIndex = focusableArray.length - 1;
@@ -33,7 +36,8 @@ const moveToNextFocus = (event, focusableArray) => {
 
   const prevElement = focusableArray[currentIndex];
   const nextElement = focusableArray[nextIndex];
-  return [prevElement, nextElement];
+  removeFocus(prevElement);
+  addFocus(nextElement);
 };
 
 export default moveToNextFocus;

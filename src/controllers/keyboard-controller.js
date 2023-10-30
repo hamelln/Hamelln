@@ -9,9 +9,8 @@ const addKeyboardController = () => {
   if (isMobile()) return;
 
   const focusableElements = document.querySelectorAll(".focusable");
-  const focusableArray = Array.from(focusableElements);
 
-  focusableArray.map((element) => {
+  focusableElements.forEach((element) => {
     //? 마우스 클릭 땐 포커스 이벤트 방지
     const preventFocusOnClick = (e) => {
       e.preventDefault();
@@ -24,22 +23,21 @@ const addKeyboardController = () => {
     const handleBlur = () => {
       removeFocus(element);
     };
-    const handleKeyDown = (e) => {
-      const [prevFocus, newFocus] = moveToNextFocus(e, focusableArray);
-      if (!prevFocus) return;
-      removeFocus(prevFocus);
-      addFocus(newFocus);
+    const handleHover = () => {
+      removeFocus(document.activeElement);
     };
 
     element.removeEventListener("mousedown", preventFocusOnClick);
     element.removeEventListener("focus", handleFocus);
     element.removeEventListener("blur", handleBlur);
-    element.removeEventListener("keydown", handleKeyDown);
+    element.removeEventListener("keydown", moveToNextFocus);
+    element.removeEventListener("mouseover", handleHover);
 
     element.addEventListener("mousedown", preventFocusOnClick);
+    element.addEventListener("mouseover", handleHover);
     element.addEventListener("focus", handleFocus);
     element.addEventListener("blur", handleBlur);
-    element.addEventListener("keydown", handleKeyDown);
+    element.addEventListener("keydown", moveToNextFocus);
   });
 };
 

@@ -1,6 +1,5 @@
 "use strict";
 
-import addEventForClickAndEnter from "../handlers/click-enter-handler.js";
 import scrollToSection from "../handlers/section-scroller.js";
 
 const navigateWithScroll = () => {
@@ -9,11 +8,37 @@ const navigateWithScroll = () => {
   const [aboutLink, projectLink, contactLink] = tabs;
   const navToProject = document.querySelector(".about__nav");
 
-  addEventForClickAndEnter(homeLogo)(scrollToSection, "home");
-  addEventForClickAndEnter(aboutLink)(scrollToSection, "about");
-  addEventForClickAndEnter(projectLink)(scrollToSection, "project");
-  addEventForClickAndEnter(contactLink)(scrollToSection, "contact");
-  addEventForClickAndEnter(navToProject)(scrollToSection, "project");
+  homeLogo.addEventListener("click", () => {
+    scrollToSection("home");
+  });
+  aboutLink.addEventListener("click", () => {
+    scrollToSection("about");
+  });
+  projectLink.addEventListener("click", () => {
+    scrollToSection("project");
+  });
+  contactLink.addEventListener("click", () => {
+    scrollToSection("contact");
+  });
+  navToProject.addEventListener("click", () => {
+    scrollToSection("project");
+  });
+
+  homeLogo.addEventListener("keydown", ({ key }) => {
+    if (key === "Enter") scrollToSection("home", true);
+  });
+  aboutLink.addEventListener("keydown", ({ key }) => {
+    if (key === "Enter") scrollToSection("about", true);
+  });
+  projectLink.addEventListener("keydown", ({ key }) => {
+    if (key === "Enter") scrollToSection("project", true);
+  });
+  contactLink.addEventListener("keydown", ({ key }) => {
+    if (key === "Enter") scrollToSection("contact", true);
+  });
+  navToProject.addEventListener("keydown", ({ key }) => {
+    if (key === "Enter") scrollToSection("project", true);
+  });
 };
 
 export default navigateWithScroll;

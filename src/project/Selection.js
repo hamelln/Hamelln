@@ -17,12 +17,7 @@ const createSelectionBox = (selectionList) => {
   const selectionBox = createElement("div", {
     class: "project-content__selection",
   });
-  const selectionTitle = createElement("h2", {
-    class: "project-content__selection__title",
-    textContent: "Project Select",
-  });
 
-  selectionBox.appendChild(selectionTitle);
   selectionBox.appendChild(selectionList);
   return selectionBox;
 };
@@ -108,6 +103,12 @@ const addEventProjectItem = (project, data) => {
 
   const handleFocus = () => {
     describe.textContent = projectData.describe;
+    const projectSince = createElement("li", {
+      class: "project-content__overview__skill__item since",
+      textContent: projectData.since,
+    });
+    projectSkillList.appendChild(projectSince);
+
     projectSkillArray.map((skill) => {
       const projectSkillItem = createElement("li", {
         class: "project-content__overview__skill__item",
@@ -116,6 +117,7 @@ const addEventProjectItem = (project, data) => {
       projectSkillList.appendChild(projectSkillItem);
       setProjectImage(projectTitle);
     });
+
     play(selectSound);
   };
 

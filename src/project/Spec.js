@@ -53,7 +53,7 @@ const getDescriptionTemplate = ({ startDay, endDay, member, skill, role }) => {
     `<span class="project-content__spec__box__skill">`,
     endDay,
     `</span>`,
-    `까지 진행했어요.`,
+    `${endDay === "현재" ? "까지 진행중이에요." : "까지 진행했어요."}`,
     `<br />`,
     `이 프로젝트에 사용된 기술은 `,
     `<span class="project-content__spec__box__skill">`,
